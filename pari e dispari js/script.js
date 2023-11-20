@@ -15,15 +15,22 @@ const userNumber = parseInt(prompt("inserisci un numero da 1 a 5"));
 
 
 /*Generiamo un numero random (sempre da 1 a 5) per il computer*/
-const randomNumber = comuputerRandomNumber (1, 5)
+const randomNumber = comuputerRandomNumber ()
 function comuputerRandomNumber(){
     return Math.floor(Math.random()*4)+1;
 }
 
+
+/* const randomNumber=computerRandomNumber(1,5) 
+function computerRandomNumber(minNumber,maxNumber){
+    return Math.floor(Math.random()*(maxNumber-minNumber + 1)-minNumber)
+}*/
+
+
 /*Sommiamo i due numeri */
 
 let somma= userNumber+randomNumber;
-const risultato=sommaDeiNumeri
+const risultato=sommaDeiNumeri()
 
 function sommaDeiNumeri(){
 
@@ -43,7 +50,7 @@ if(risultato===userChoice){
     return "il computer vince"
 }
 }
-const ilVincitore = vincitore
+const ilVincitore = vincitore()
 console.log(ilVincitore)
 
 
